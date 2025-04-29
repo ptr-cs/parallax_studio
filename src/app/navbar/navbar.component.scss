@@ -1,0 +1,35 @@
+.app-container {
+    height: 100vh;
+  }
+  .app-sidenav {
+    width: 250px;
+  }
+  .spacer {
+    // flex: 1 1 auto;
+    width: 10px;
+  }
+  
+  /* hide desktop nav on small screens */
+  .desktop-only {
+    display: none;
+  }
+  /* hide mobile menu button on larger screens */
+  .mobile-only {
+    display: inline-flex;
+  }
+  
+  .menu-icon {
+    height: 1.125rem;
+    width: 1.125rem;
+    margin-right: var(--mat-text-button-icon-spacing, 8px);
+  }
+  
+  @media (min-width: 600px) {
+    .desktop-only {
+      display: inline-flex;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
+  
